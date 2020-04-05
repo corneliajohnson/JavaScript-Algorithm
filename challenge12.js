@@ -2,8 +2,7 @@
 
 //My Solution
 function largestWord(str) {
-  let words = str.replace(/[.,!,?]+/g, '');
-  words = words.split(' ');
+  let words = str.replace(/[.,!,?]+/g, '').split(' ');
   let wordLengths = [];
   let longestWord, longest;
 
@@ -17,6 +16,7 @@ function largestWord(str) {
 }
 
 console.log(largestWord('I am the longest word.'));
+
 
 //Instructor Solution
 function largestWord2(str) {
